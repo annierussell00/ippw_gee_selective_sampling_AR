@@ -5,8 +5,9 @@ This repository contains the R code used for the two simulation studies associat
 The simulations illustrate the use of inverse probability of participation weighted generalised estimating equations (IPPW-GEE) under exposure-history-dependent selective sampling.
 
 Contents
-01_simulation_A.R — Code for Simulation A.
-02_simulation_B.R — Code for Simulation B.
+Simulation_A.R — Code for Simulation A.
+Simulation_B.R — Code for Simulation B.
+Simulation_B_data.csv - Generated data used in simulation B
 
 Software
 
