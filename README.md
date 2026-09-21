@@ -5,8 +5,10 @@ This repository contains the R code used for the two simulation studies associat
 The simulations illustrate the use of inverse probability of participation weighted generalised estimating equations (IPPW-GEE) under exposure-history-dependent selective sampling.
 
 Contents
-01_simulation_A.R — Code for Simulation A.
-02_simulation_B.R — Code for Simulation B.
+Simulation_A.R — Code for Simulation A.
+Simulation_B.R — Code for Simulation B.
+Simulation_B_Data_Generation is included for provenance. It documents how Simulation_B_data.csv was generated from restricted RNHRD/SEQUENCE inputs — but cannot be executed without access to those inputs. Simulation_B.R is the main reproducible analysis and only needs Simulation_B_data.csv and Sample_data.csv as inputs
+Simulation_B_data.csv - Generated data used in simulation B
 
 Software
 
@@ -15,7 +17,8 @@ The analyses were conducted using R version 4.4.1.
 Data
 
 Simulation dataset A is generated within the supplied R code.
-Generation of simulation dataset B is not included in this repository because of data access and confidentiality restrictions.
+Simulation_B_data.csv — simulated population data used to define the target estimand. Elements of the data is callibrated to the SEQUENCE study data set.
+SEQUENCE study data and RNHRD data are not included in this repository due to patient confidentiality.
 
 Reproducibility
 
