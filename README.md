@@ -15,7 +15,8 @@ The analyses were conducted using R version 4.4.1.
 Data
 
 Simulation dataset A is generated within the supplied R code.
-Generation of simulation dataset B is not included in this repository because of data access and confidentiality restrictions.
+Simulation_B_data.csv — simulated population data used to define the target estimand.
+SEQUENCE study patient data not included in this repository due to patient confidentiality.
 
 Reproducibility
 
