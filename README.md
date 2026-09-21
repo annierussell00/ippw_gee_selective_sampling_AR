@@ -7,6 +7,7 @@ The simulations illustrate the use of inverse probability of participation weigh
 Contents
 Simulation_A.R — Code for Simulation A.
 Simulation_B.R — Code for Simulation B.
+Simulation_B_Data_Generation is included for provenance. It documents how Simulation_B_data.csv was generated from restricted RNHRD/SEQUENCE inputs — but cannot be executed without access to those inputs. Simulation_B.R is the main reproducible analysis and only needs Simulation_B_data.csv and Sample_data.csv as inputs
 Simulation_B_data.csv - Generated data used in simulation B
 
 Software
@@ -16,8 +17,8 @@ The analyses were conducted using R version 4.4.1.
 Data
 
 Simulation dataset A is generated within the supplied R code.
-Simulation_B_data.csv — simulated population data used to define the target estimand.
-SEQUENCE study patient data and RNHRD data not included in this repository due to patient confidentiality.
+Simulation_B_data.csv — simulated population data used to define the target estimand. Elements of the data is callibrated to the SEQUENCE study data set.
+SEQUENCE study data and RNHRD data are not included in this repository due to patient confidentiality.
 
 Reproducibility
 
