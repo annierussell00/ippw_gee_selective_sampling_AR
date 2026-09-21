@@ -17,7 +17,7 @@ Data
 
 Simulation dataset A is generated within the supplied R code.
 Simulation_B_data.csv — simulated population data used to define the target estimand.
-SEQUENCE study patient data not included in this repository due to patient confidentiality.
+SEQUENCE study patient data and RNHRD data not included in this repository due to patient confidentiality.
 
 Reproducibility
 
