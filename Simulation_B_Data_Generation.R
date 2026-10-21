@@ -101,14 +101,14 @@ baseline_samp_data <- samp_data[
 
 baseline_samp_data <- samp_data %>%
   filter(line == 1) %>%
-  rename(date_baseline = date_at_line) %>%
   dplyr::select(-line)
 
 baseline_dates_lookup <- baseline_samp_data %>%
   filter(total_lines %in% max_line) %>%
   group_by(total_lines) %>%
   summarise(baseline_dates = list(date_baseline),
-            .groups = "drop")
+            .groups = "drop") %>%
+  mutate(total_lines = as.factor(total_lines))
 
 set.seed(1)
 population_data <- population_data %>%
@@ -277,8 +277,7 @@ generate_synthetic_ds <- function() {
       values_drop_na = FALSE
     ) %>%
     mutate(
-      patient_id = as.character(patient_id),
-      scenario = "Synthetic"
+      patient_id = as.character(patient_id)
     ) %>%
     filter(!is.na(psarc) | !is.na(drug_survival)) %>%
     dplyr::select(-total_lines_num) %>%
@@ -297,7 +296,8 @@ target_population <- target_population%>%
   )
 target_population$line_cat <- relevel(target_population$line_cat, ref = "2-3")
 
-target_population_patients <- target_population %>%
-  distinct(patient_id, total_lines)
+target_population <- target_population %>%
+  dplyr::select(-total_time,-D2T) %>%
+  arrange(patient_id, line)
 
 write.csv(target_population, "Simulation_B_data.csv", row.names = FALSE)

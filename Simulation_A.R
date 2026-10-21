@@ -1,5 +1,5 @@
 ################################################################################
-#### Simulation A: Effect of target-distribution misspecification ####
+#### Simulation A: Effect of noise in target-distribution & effect modification ####
 ################################################################################
 
 # The simulation evaluates inverse probability of participation weighting (IPPW).
@@ -168,7 +168,7 @@ sim_run <- function(betaAZ, shift, seed) {
 grid <- expand.grid(
   betaAZ = c(0, -0.5, -1),
   shift = c(0, 0.2, 0.4, 0.6),
-  rep = 1:50
+  rep = 1:500
 )
 
 results <- purrr::pmap_dfr(

@@ -1,5 +1,5 @@
 ################################################################################
-#### Simulation A: Effect of target-distribution misspecification ####
+#### Simulation B: Effect of target-distribution misspecification ####
 ################################################################################
 
 # Monte Carlo simulation study comparing:
