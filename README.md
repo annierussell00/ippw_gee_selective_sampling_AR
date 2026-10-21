@@ -1,6 +1,6 @@
 # ippw_gee_selective_sampling_AR
 
-This repository contains the R code used for the two simulation studies associated with research in "Generalising evidence under exposure-history-dependent sampling with an application in psoriatic arthritis".
+This repository contains the R code used for the two simulation studies associated with research in "Correcting selection bias in sequential treatment studies: population-standardised estimation using weighted generalised estimating equations".
 
 The simulations illustrate the use of inverse probability of participation weighted generalised estimating equations (IPPW-GEE) under exposure-history-dependent selective sampling.
 
@@ -17,8 +17,8 @@ The analyses were conducted using R version 4.4.1.
 Data
 
 Simulation dataset A is generated within the supplied R code.
-Simulation_B_data.csv — simulated population data used to define the target estimand. Elements of the data is callibrated to the SEQUENCE study data set.
-SEQUENCE study data and RNHRD data are not included in this repository due to patient confidentiality.
+Simulation_B_data.csv — synthetic population data used to define the target estimand. Elements of the data is callibrated to the SEQUENCE study data set.
+The SEQUENCE study and RNHRD data are not included in this repository due to patient confidentiality.
 
 Reproducibility
 
